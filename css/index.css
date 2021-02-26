@@ -1,3 +1,90 @@
-.titulo{
-    color: blue;
+:root {
+  --verde: #4cb8b3;
+  --rosa: #f53756;
+  --amarillo: #fef46d;
+  --morado: #752f97;
+  --negro: #000;
+  --blanco: #fff;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(221, 221, 231, 1) 50%,
+    rgba(0, 151, 167, 1) 100%
+  );
+}
+h1 {
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  transition: .8s;
+}
+h1:hover{
+   color: var(--morado);
+   
+}
+
+.bg {
+  background-color: var(--verde);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40%;
+  justify-content: center;
+  border-radius: 1rem;
+  margin: 6rem auto;
+  -webkit-box-shadow: 25px 20px 51px 7px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 25px 20px 51px 7px rgba(0, 0, 0, 0.73);
+  box-shadow: 25px 20px 51px 7px rgba(0, 0, 0, 0.73);
+  
+}
+
+.content {
+  display: grid;
+  text-align: center;
+  
+  width: 50%;
+}
+
+.input {
+  border-radius: 8px;
+  margin: 5px 0 20px 0;
+  padding: 0.6rem 1rem;
+  width: 110%;
+  cursor: pointer;
+  text-align: center;
+}
+.button {
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 6px;
+  border-style: none;
+  background-color: #0097a7;
+  padding: 1rem;
+  cursor: pointer;
+  margin: 5rem 0;
+  transition: transform .5s;
+}
+button:hover {
+  background-color: #ffc107;
+  transform: scale(1.1);
+}
+.button a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  
 }
